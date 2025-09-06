@@ -22,6 +22,45 @@ iron-lady-chatbot/
 └── README.md # Documentation
 
 
+
+---
+
+## 🛠️ Installation & Setup
+
+### 1. Clone the Repository
+```bash
+git clone https://github.com/your-username/iron-lady-chatbot.git
+cd iron-lady-chatbot
+
+
+**install Dependencies:**
+
+pip install flask flask-cors openai
+
+
+**Set OpenAI API Key**
+
+# Mac/Linux
+export OPENAI_API_KEY="your_api_key_here"
+
+# Windows
+set OPENAI_API_KEY=your_api_key_here
+
+
+**Then in app.py:**
+
+import os
+openai.api_key = os.getenv("OPENAI_API_KEY")
+
+
+
+**Running the project:**
+
+Start the backend  - python app.py (Server will run at: http://127.0.0.1:5000)
+Open the index.html in your browser directly or serve it with : (python -m http.server 8000
+)
+
+
 💡 Example Questions
 
 What programs does Iron Lady offer?
